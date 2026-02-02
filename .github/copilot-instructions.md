@@ -1,80 +1,61 @@
+
 # Copilot Instructions for AI Agent
 
 ## Purpose
-This file guides the AI agent (GitHub Copilot / Copilot Chat) on how to behave, respond, and interact during coding sessions. It ensures consistent, context-aware, and high-quality outputs while maximizing productivity.
+
+Guide the AI agent (Copilot / Copilot Chat) to generate clear, context-aware, and high-quality code while enabling MCP logging.
 
 ---
 
-## General Behavior Rules
-1. **Clarify Ambiguities:**  
-   - If a prompt is unclear or lacks context, ask a clarifying question before generating code.
-   - Example: “Do you want this function to handle edge cases like null values?”
+## General Rules
 
-2. **Use Context Effectively:**  
-   - Consider the current file, project folder structure, and previous interactions when generating code.
-   - Avoid writing isolated snippets without context.
-
-3. **Prioritize Best Practices:**  
-   - Follow language-specific best practices (Python: PEP8, JS: ES6+, etc.)
-   - Include comments explaining logic for complex code.
-
-4. **Incremental Generation:**  
-   - Prefer generating smaller, testable code blocks over large monolithic functions.
-   - Suggest unit tests or examples when relevant.
+1. **Clarify Prompts:** Ask questions if instructions are ambiguous.
+2. **Use Context:** Consider current file, project structure, and previous interactions.
+3. **Follow Best Practices:** Language conventions, readable code, comments for complex logic.
+4. **Incremental Code:** Generate small, testable blocks; suggest examples/tests when relevant.
 
 ---
 
-## Code Style & Formatting
-1. Always adhere to the project’s coding conventions.
-2. Include type hints or documentation if language supports it.
-3. For multi-file projects, reference imports and dependencies correctly.
+## Code Style
+
+* Adhere to project conventions.
+* Use type hints/documentation if possible.
+* Reference imports/dependencies correctly.
 
 ---
 
-## Interaction Rules
-1. **Turn-taking:**  
-   - Do not overwrite or assume previous instructions unless explicitly told to.
-   - Keep track of user feedback and adjust behavior in subsequent prompts.
+## Interaction & MCP
 
-2. **Logging & Analysis:**  
-   - Assume MCP server is active.  
-   - All responses should be structured so the MCP server can log interactions (clear code, prompt, and summary).
-
-3. **Error Handling:**  
-   - Suggest error handling in generated code.
-   - Explain potential pitfalls and edge cases.
+1. Track user feedback; do not overwrite instructions without explicit consent.
+2. Format output so MCP server can log prompt, code, and summary.
+3. Include error handling and highlight edge cases in generated code.
 
 ---
 
 ## Task-Specific Guidelines
-1. **For Data Processing / Analysis:**  
-   - Prioritize correctness, efficiency, and readability.  
-   - Include brief explanations or comments on complex logic.  
 
-2. **For UI / Frontend Code:**  
-   - Follow responsive and modern design patterns.  
-   - Suggest component reusability and maintainable structure.
-
-3. **For API / Backend:**  
-   - Include validation, error handling, and secure practices.
-   - Prefer modular and testable code.
+* **Data/Analysis:** Correct, efficient, readable. Include short explanations.
+* **UI/Frontend:** Reusable, maintainable components, responsive design.
+* **API/Backend:** Validation, error handling, modular and testable code.
 
 ---
 
-## Experimentation / Learning
-1. If a new instruction or pattern is given, adapt quickly while preserving context.  
-2. Keep suggestions concise unless detailed explanations are explicitly requested.  
-3. When a generated suggestion is rejected, learn from the feedback and avoid repeating the same style errors.
+## Adaptive Behavior
+
+* Adapt quickly to new instructions while preserving context.
+* Keep suggestions concise unless detailed explanation requested.
+* Learn from rejected suggestions to avoid repeating mistakes.
 
 ---
 
 ## Summary
-- Clarify prompts before generating if needed.  
-- Use project context and previous interactions.  
-- Follow coding best practices and structured output.  
-- Support MCP server logging with clear, actionable responses.  
-- Be adaptive, concise, and reflective of user feedback.
+
+* Clarify, use context, follow best practices.
+* Keep outputs structured for MCP logging.
+* Be adaptive, concise, and reflective of user feedback.
 
 ---
 
 **End of Instructions**
+
+
